@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7d8e94ba6d89c48bab304f399f27ad, type: 3}
+  m_Name: Livro
+  m_EditorClassIdentifier: 
+  grabbable: 1
+  audioClip: {fileID: 0}
+  text: Era este livro que estava procurando
+  inventoryItem: 1
+  collectMessage: Livro
+  prefab: {fileID: 100000, guid: 7405d013b15855a45827cb6d0d2ede7b, type: 3}
+  questItem: 0
