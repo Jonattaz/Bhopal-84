@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 410766b47f10e534f94cc0503a3acf23, type: 3}
+  m_Name: 6 Deena AND Guard (pensamentos)
+  m_EditorClassIdentifier: 
+  speakerLeft: {fileID: 11400000, guid: 775e0e8fa85c8b047916bdf14e1712f2, type: 2}
+  speakerRight: {fileID: 11400000, guid: d3c10678144e8044a8dddef7f6543716, type: 2}
+  lines:
+  - character: {fileID: 11400000, guid: d3c10678144e8044a8dddef7f6543716, type: 2}
+    text: Temos que proteger a rede neural!
+  - character: {fileID: 11400000, guid: 775e0e8fa85c8b047916bdf14e1712f2, type: 2}
+    text: "O que est\xE1 acontecendo? Por que esses malditos est\xE3o me atacando?\nN\xE3o
+      sei porque fico surpresa com isso, eles mataram tantos por t\xE3o pouco\u2026"
