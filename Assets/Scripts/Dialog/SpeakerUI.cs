@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class SpeakerUI : MonoBehaviour
 {
-    // Variável que representa a imagem do personagem
-    public Image portrait;
     
     // Nome completo do personagem
     public Text fullName;
@@ -23,8 +21,7 @@ public class SpeakerUI : MonoBehaviour
         set 
         {
             speaker = value;
-            portrait.sprite = speaker.portrait;
-            fullName.text = speaker.fullName;
+            fullName.text = speaker.fullName + ":";
         
         }
     }

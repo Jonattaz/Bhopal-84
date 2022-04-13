@@ -8,7 +8,7 @@ public class DialogPopUp : MonoBehaviour
     public GameObject dialog;
     
     // Bool que avança o primeiro dialogo
-    public static bool advanceDialog;
+    //public static bool advanceDialog;
 
     [SerializeField]private string tagName;
 
@@ -25,14 +25,14 @@ public class DialogPopUp : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.CompareTag(tagName))
         { 
             //Player.talking = true;
             dialog.SetActive(true);
-            GameManager.dialogMode = true;
-            advanceDialog = true;
+            //GameManager.dialogMode = true;
+            //advanceDialog = true;
         }
 
     }
@@ -42,10 +42,8 @@ public class DialogPopUp : MonoBehaviour
         if (collision.CompareTag(tagName))
         {
             dialog.SetActive(false);
-            GameManager.dialogMode = false;
-            GameManager.offense = true;
-            Destroy(dialog);
-            Destroy(gameObject);
+           // GameManager.dialogMode = false;
+           // GameManager.offense = true;
         }
     }
 
@@ -53,7 +51,7 @@ public class DialogPopUp : MonoBehaviour
     {
         if (collision.CompareTag(tagName))
         {
-            GameManager.offense = false;
+           // GameManager.offense = false;
         }
     }
 

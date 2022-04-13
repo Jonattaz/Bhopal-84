@@ -6,49 +6,44 @@ public class DialogDisplay : MonoBehaviour
 {
     public Conversation conversation;
 
-    public GameObject speakerLeft;
+    public GameObject speaker_1_GO;
 
-    public GameObject speakerRight;
+    public GameObject speaker_2_GO;
 
-    private SpeakerUI speakerUILeft;
+    private SpeakerUI speakerUI_1;
 
-    private SpeakerUI speakerUIRight;
+    private SpeakerUI speakerUI_2;
 
     private int activeLineIndex = 0;
-
-    
 
     // Start is called before the first frame update
     void Start()
     {
-        speakerUILeft = speakerLeft.GetComponent<SpeakerUI>();
-        speakerUIRight = speakerRight.GetComponent<SpeakerUI>();
+        speakerUI_2 = speaker_2_GO.GetComponent<SpeakerUI>();
+        speakerUI_1 = speaker_1_GO.GetComponent<SpeakerUI>();
 
-        speakerUILeft.Speaker = conversation.speakerLeft;
-        speakerUIRight.Speaker = conversation.speakerRight;
+        speakerUI_2.Speaker = conversation.speakerLeft;
+        speakerUI_1.Speaker = conversation.speakerRight;
     }
 
     // Update is called once per frame
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.X) && GameManager.dialogMode) 
+        if (Input.GetKeyDown(KeyCode.X))
         {
             AdvanceConversation();
-        
         }
-           
-        if (DialogPopUp.advanceDialog)
+
+       /* if (DialogPopUp.advanceDialog)
         {
             AdvanceConversation();
             DialogPopUp.advanceDialog = false;
-        }
-
+        } */
     }
 
-
-  public void AdvanceConversation() 
+    public void AdvanceConversation()
     {
-        if (activeLineIndex < conversation.lines.Length) 
+        if (activeLineIndex < conversation.lines.Length)
         {
             //Player.talking = true;
             DisplayLine();
@@ -56,8 +51,8 @@ public class DialogDisplay : MonoBehaviour
         }
         else
         {
-            speakerUILeft.Hide();
-            speakerUIRight.Hide();
+            speakerUI_2.Hide();
+            speakerUI_1.Hide();
             activeLineIndex = 0;
             //Player.talking = false;
         }
@@ -68,49 +63,26 @@ public class DialogDisplay : MonoBehaviour
         Line line = conversation.lines[activeLineIndex];
         Character character = line.character;
 
-        if (speakerUILeft.SpeakerIs(character)) 
+        if (speakerUI_2.SpeakerIs(character))
         {
-            SetDialog(speakerUILeft, speakerUIRight, line.text);
-
+            SetDialog(speakerUI_2, speakerUI_1, line.text);
         }
         else
         {
-            SetDialog(speakerUIRight, speakerUILeft, line.text);
+            SetDialog(speakerUI_1, speakerUI_2, line.text);
         }
     }
 
-    void SetDialog
-    (
+    void SetDialog(
         SpeakerUI activeSpeakerUI,
         SpeakerUI inactiveSpeakerUI,
-        string text) 
+        string text
+    )
     {
         activeSpeakerUI.Dialog = text;
         activeSpeakerUI.Show();
 
         inactiveSpeakerUI.Dialog = text;
         inactiveSpeakerUI.Hide();
-    
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

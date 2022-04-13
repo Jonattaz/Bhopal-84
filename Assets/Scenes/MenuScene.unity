@@ -371,7 +371,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 325068803}
-        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: SceneLoad
         m_Mode: 3
         m_Arguments:
@@ -504,7 +504,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 325068803}
-        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: ExitGame
         m_Mode: 1
         m_Arguments:
@@ -715,11 +715,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 325068802}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09d230ca21ed28245a1f628b743faa8d, type: 3}
+  m_Script: {fileID: 11500000, guid: 90abe84e2f830b748ba1b1960ece5e79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  opcoes: {fileID: 607873641}
   menu: {fileID: 2076501072}
-  buttons: {fileID: 607873641}
+  credits: {fileID: 0}
+  menuSoundtrack: {fileID: 0}
 --- !u!4 &325068804
 Transform:
   m_ObjectHideFlags: 0
@@ -1322,7 +1324,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 325068803}
-        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: SceneLoad
         m_Mode: 3
         m_Arguments:
@@ -2188,8 +2190,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 325068803}
-        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
-        m_MethodName: ButtonsToMenu
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: OpcoesToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2934,8 +2936,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 325068803}
-        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
-        m_MethodName: MenuToButtons
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: MenuToOpcoes
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
