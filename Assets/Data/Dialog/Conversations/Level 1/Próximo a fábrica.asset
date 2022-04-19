@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 410766b47f10e534f94cc0503a3acf23, type: 3}
-  m_Name: 2 Deena VS Guard 1
+  m_Name: "Pr\xF3ximo a f\xE1brica"
   m_EditorClassIdentifier: 
-  speakerLeft: {fileID: 11400000, guid: 775e0e8fa85c8b047916bdf14e1712f2, type: 2}
-  speakerRight: {fileID: 11400000, guid: 3787f5a099c7ca04ab816f86df6afede, type: 2}
+  speakerLeft: {fileID: 11400000, guid: d3c10678144e8044a8dddef7f6543716, type: 2}
+  speakerRight: {fileID: 0}
   lines:
   - character: {fileID: 11400000, guid: d3c10678144e8044a8dddef7f6543716, type: 2}
-    text: Temos que proteger a rede neural!
-  - character: {fileID: 11400000, guid: 775e0e8fa85c8b047916bdf14e1712f2, type: 2}
-    text: "Com licen\xE7a, eu gostaria de entrar na empresa.\n"
+    text: "\u2018Cof, cof*. Hoje o dia na f\xE1brica foi bem puxado\u2026 Estava
+      com um cheiro bem forte, n\xE3o acha? Cof cof.\u2019"
   - character: {fileID: 11400000, guid: d3c10678144e8044a8dddef7f6543716, type: 2}
-    text: "Essa \xE1rea \xE9 restrita. Por favor, saia.\n"
+    text: "\u2018Ainda bem que temos trabalho! Conseguimos pelo menos pagar alguma
+      comida.\u2019\r\n\u2018Cof cof, cof cof*."

@@ -10,7 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de1608cddf3ba5f40ae58cb5d5efb146, type: 3}
-  m_Name: Holo John
+  m_Name: Personagem
   m_EditorClassIdentifier: 
-  fullName: Holo John
-  portrait: {fileID: 21300000, guid: ec8fcd86c6a2d1e458e5f4245a34495c, type: 3}
+  fullName: Personagem

@@ -7,6 +7,4 @@ public class Character : ScriptableObject
 {
     // Propriedades que o Scriptable Object irá ter. Nome e foto
     public string fullName;
-    public Sprite portrait;
-
 }

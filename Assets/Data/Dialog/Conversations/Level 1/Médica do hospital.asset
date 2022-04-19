@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 410766b47f10e534f94cc0503a3acf23, type: 3}
-  m_Name: 3 Deena Monologue 1 (sala de seguranca)
+  m_Name: "M\xE9dica do hospital"
   m_EditorClassIdentifier: 
-  speakerLeft: {fileID: 11400000, guid: 775e0e8fa85c8b047916bdf14e1712f2, type: 2}
-  speakerRight: {fileID: 11400000, guid: 775e0e8fa85c8b047916bdf14e1712f2, type: 2}
+  speakerLeft: {fileID: 11400000, guid: 6812f064ffe67af42ba8d42844c0762d, type: 2}
+  speakerRight: {fileID: 0}
   lines:
-  - character: {fileID: 0}
-    text: "N\xE3o consigo ver a luz do HJ. Espero que esses malditos guardas n\xE3o
-      tenham danificado ele."
+  - character: {fileID: 11400000, guid: 6812f064ffe67af42ba8d42844c0762d, type: 2}
+    text: "\u2018As pessoas n\xE3o param de chegar com tosse e dores de barriga no
+      PS. Essa f\xE1brica est\xE1 acabando com todo mundo da cidade!\u2019"

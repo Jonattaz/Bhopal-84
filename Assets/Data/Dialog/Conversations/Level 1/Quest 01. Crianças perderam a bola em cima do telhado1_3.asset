@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 410766b47f10e534f94cc0503a3acf23, type: 3}
+  m_Name: "Quest 01. Crian\xE7as perderam a bola em cima do telhado1_3"
+  m_EditorClassIdentifier: 
+  speakerLeft: {fileID: 11400000, guid: 6c1cb4e5c2de00146b5e8e890df34cb8, type: 2}
+  speakerRight: {fileID: 11400000, guid: 6a58d8d3c42f4c54f816fc4b36a71e3f, type: 2}
+  lines:
+  - character: {fileID: 11400000, guid: 6c1cb4e5c2de00146b5e8e890df34cb8, type: 2}
+    text: " Voc\xEA tinha que isolar a bola na casa do [nome NPC 3.1], n\xE9 [nome
+      crian\xE7a 02]. Ele \xE9 t\xE3o chato!\r\n"
+  - character: {fileID: 11400000, guid: 6a58d8d3c42f4c54f816fc4b36a71e3f, type: 2}
+    text: "Cala a boca! Voc\xEA que n\xE3o sabe chutar direito! Sempre fica isolando
+      tudo. Agora a gente n\xE3o consegue mais brincar. Que bosta\u2026\r\n"
+  - character: {fileID: 11400000, guid: 6c1cb4e5c2de00146b5e8e890df34cb8, type: 2}
+    text: "Ei, \xF4 mo\xE7o, voc\xEA pode buscar a bola l\xE1 na casa do [nome NPC
+      3.1] pra gente?"
+  - character: {fileID: 11400000, guid: 6a58d8d3c42f4c54f816fc4b36a71e3f, type: 2}
+    text: "\xC9 mo\xE7o, faz a boa pra gente a\xED! O [nome NPC 3.1] n\xE3o gosta
+      da gente e sempre fica brigando com a gente quando mandamos a bola l\xE1 na
+      casa dele. Quer dizer, quando a [crian\xE7a 01] manda pra l\xE1."
+  - character: {fileID: 11400000, guid: 6c1cb4e5c2de00146b5e8e890df34cb8, type: 2}
+    text: "Cala a boca, seu besta. Voc\xEA tamb\xE9m faz isso!"
+  - character: {fileID: 11400000, guid: 6c1cb4e5c2de00146b5e8e890df34cb8, type: 2}
+    text: "Mo\xE7o, pega l\xE1 a bola pra gente, por favor?"

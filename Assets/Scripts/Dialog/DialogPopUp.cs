@@ -1,38 +1,32 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogPopUp : MonoBehaviour
 {
     // GameObject do dialogo
     public GameObject dialog;
     
-    // Bool que avança o primeiro dialogo
-    //public static bool advanceDialog;
-
     [SerializeField]private string tagName;
 
+    [SerializeField]private Image image;
+
+    [SerializeField]private Color endColor;
+
+    [SerializeField]private Color startColor;
+
     // Start is called before the first frame update
-    void Start()
-    {
-      
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
+   private void Start() {
+       startColor = image.color;
+       endColor.a = 1;
+   }
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.CompareTag(tagName))
         { 
-            //Player.talking = true;
+            image.color = endColor;
             dialog.SetActive(true);
-            //GameManager.dialogMode = true;
-            //advanceDialog = true;
         }
 
     }
@@ -41,18 +35,8 @@ public class DialogPopUp : MonoBehaviour
     {
         if (collision.CompareTag(tagName))
         {
+            image.color = startColor;
             dialog.SetActive(false);
-           // GameManager.dialogMode = false;
-           // GameManager.offense = true;
         }
     }
-
-    private void OnTriggerStay(Collider collision)
-    {
-        if (collision.CompareTag(tagName))
-        {
-           // GameManager.offense = false;
-        }
-    }
-
 }
