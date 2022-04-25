@@ -16,11 +16,11 @@ public struct Line
 [CreateAssetMenu(fileName = "New Conversation", menuName = "Conversation")]
 public class Conversation : ScriptableObject
 {
+    public bool quest;
     // Propriedades que ditam quem irá falar em cada lado da tela
     public Character speakerLeft;
     public Character speakerRight;
     
     // Representa as linhas de cada fala
     public Line[] lines;
-
 }

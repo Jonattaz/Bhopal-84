@@ -33,19 +33,12 @@ public class DialogDisplay : MonoBehaviour
         {
             AdvanceConversation();
         }
-
-       /* if (DialogPopUp.advanceDialog)
-        {
-            AdvanceConversation();
-            DialogPopUp.advanceDialog = false;
-        } */
     }
 
     public void AdvanceConversation()
     {
         if (activeLineIndex < conversation.lines.Length)
         {
-            //Player.talking = true;
             DisplayLine();
             activeLineIndex += 1;
         }
@@ -54,7 +47,6 @@ public class DialogDisplay : MonoBehaviour
             speakerUI_2.Hide();
             speakerUI_1.Hide();
             activeLineIndex = 0;
-            //Player.talking = false;
         }
     }
 
@@ -62,6 +54,8 @@ public class DialogDisplay : MonoBehaviour
     {
         Line line = conversation.lines[activeLineIndex];
         Character character = line.character;
+
+        //conversation.quest = true;
 
         if (speakerUI_2.SpeakerIs(character))
         {
