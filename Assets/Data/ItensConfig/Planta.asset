@@ -21,4 +21,5 @@ MonoBehaviour:
   inventoryItem: 1
   collectMessage: Bulbassauro
   prefab: {fileID: 1173881189894944, guid: 58de2216369e0d14c9daa185bf9e7422, type: 3}
-  questItem: 0
+  itemName: Planta
+  flashlight: 0

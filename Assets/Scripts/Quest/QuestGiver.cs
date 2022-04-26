@@ -8,27 +8,44 @@ public class QuestGiver : MonoBehaviour
     public Quest quest;
     public PlayerQuests playerQuests;
 
+    public static QuestGiver instance;
     public GameObject questWindow;
     public Text title;
     public Text description;
     public Text neededItem;
+
+    [HideInInspector]
+    public string neededItemHolder;
+    public int questIndex;
     
+    private void Awake() {
+        instance = this;
+    }
 
     public void OpenQuestWindoow(){
         questWindow.SetActive(true);
 
         title.text = quest.title;
-        description.text = quest.title;
-        neededItem.text = quest.neededItem;
+        description.text = quest.description;
+        neededItem.text = "Item necessário - " + quest.neededItem;
+        neededItemHolder = quest.neededItem;
+        quest.isActive = true;
+        playerQuests.quests[questIndex] = quest;
     }
 
-    public void AcceptQuest(){
-        questWindow.SetActive(false);
-        quest.isActive = true;
-        // Entregar a quest para o jogador, fazer um alg para adicionar várias quest em posições diferentes
-        playerQuests.quests[0] = quest;
+    public void CompleteQuest(){
 
-        
+        questWindow.SetActive(false);
+        quest.isActive = false;
+        title.text = "";
+        description.text = "";
+        neededItem.text = "";
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        if(other.gameObject.CompareTag("Player")){
+            OpenQuestWindoow();
+        }        
     }
 
 }

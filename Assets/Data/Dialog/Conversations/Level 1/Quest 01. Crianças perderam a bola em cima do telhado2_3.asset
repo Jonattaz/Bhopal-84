@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 410766b47f10e534f94cc0503a3acf23, type: 3}
   m_Name: "Quest 01. Crian\xE7as perderam a bola em cima do telhado2_3"
   m_EditorClassIdentifier: 
+  quest: 0
   speakerLeft: {fileID: 11400000, guid: 07bdb6ac91438e1469c2febad6c400c7, type: 2}
-  speakerRight: {fileID: 0}
+  speakerRight: {fileID: 11400000, guid: 07bdb6ac91438e1469c2febad6c400c7, type: 2}
   lines:
   - character: {fileID: 11400000, guid: 07bdb6ac91438e1469c2febad6c400c7, type: 2}
     text: "Essas crian\xE7as n\xE3o fazem nada al\xE9m de ficar causando aqui perto

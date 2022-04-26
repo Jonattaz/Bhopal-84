@@ -18,4 +18,5 @@ MonoBehaviour:
   inventoryItem: 1
   collectMessage: Livro
   prefab: {fileID: 100000, guid: 7405d013b15855a45827cb6d0d2ede7b, type: 3}
-  questItem: 0
+  itemName: Livro
+  flashlight: 0

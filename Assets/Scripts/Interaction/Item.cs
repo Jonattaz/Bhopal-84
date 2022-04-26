@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 [CreateAssetMenu]
 public class Item : ScriptableObject
 {
@@ -26,7 +27,7 @@ public class Item : ScriptableObject
     public GameObject prefab;
 
     // Bool que serve para identificar um item de quest
-    public bool questItem;
+    public string itemName;
 
     public bool flashlight;
 }

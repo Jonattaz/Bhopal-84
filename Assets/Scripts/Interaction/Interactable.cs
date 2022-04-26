@@ -29,6 +29,4 @@ public abstract class Interactable : MonoBehaviour
                 PlayerInventory.instance.AddItem(item);
             }
     }
-
-
 }

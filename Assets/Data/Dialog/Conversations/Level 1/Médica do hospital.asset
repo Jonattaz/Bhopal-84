@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 410766b47f10e534f94cc0503a3acf23, type: 3}
   m_Name: "M\xE9dica do hospital"
   m_EditorClassIdentifier: 
+  quest: 0
   speakerLeft: {fileID: 11400000, guid: 6812f064ffe67af42ba8d42844c0762d, type: 2}
-  speakerRight: {fileID: 0}
+  speakerRight: {fileID: 11400000, guid: 6812f064ffe67af42ba8d42844c0762d, type: 2}
   lines:
   - character: {fileID: 11400000, guid: 6812f064ffe67af42ba8d42844c0762d, type: 2}
     text: "\u2018As pessoas n\xE3o param de chegar com tosse e dores de barriga no

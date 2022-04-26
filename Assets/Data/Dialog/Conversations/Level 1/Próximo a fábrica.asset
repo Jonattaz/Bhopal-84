@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 410766b47f10e534f94cc0503a3acf23, type: 3}
   m_Name: "Pr\xF3ximo a f\xE1brica"
   m_EditorClassIdentifier: 
+  quest: 1
   speakerLeft: {fileID: 11400000, guid: d3c10678144e8044a8dddef7f6543716, type: 2}
-  speakerRight: {fileID: 0}
+  speakerRight: {fileID: 11400000, guid: d3c10678144e8044a8dddef7f6543716, type: 2}
   lines:
   - character: {fileID: 11400000, guid: d3c10678144e8044a8dddef7f6543716, type: 2}
     text: "\u2018Cof, cof*. Hoje o dia na f\xE1brica foi bem puxado\u2026 Estava

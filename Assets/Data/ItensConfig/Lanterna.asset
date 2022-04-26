@@ -16,7 +16,7 @@ MonoBehaviour:
   audioClip: {fileID: 0}
   text: Perfeito! Era isso que precisava
   inventoryItem: 0
-  collectMessage: 
+  collectMessage: Essa lanterna parece estar funcionando
   prefab: {fileID: 6510618520449216089, guid: 6ee4b4871cb820f4b931f0b194599c82, type: 3}
-  questItem: 0
+  itemName: Lanterna
   flashlight: 1

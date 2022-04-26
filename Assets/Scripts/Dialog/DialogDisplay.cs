@@ -16,6 +16,8 @@ public class DialogDisplay : MonoBehaviour
 
     private int activeLineIndex = 0;
 
+    public Quest quest;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +49,11 @@ public class DialogDisplay : MonoBehaviour
             speakerUI_2.Hide();
             speakerUI_1.Hide();
             activeLineIndex = 0;
+
+            if(conversation.quest && !quest.isActive){
+                QuestGiver.instance.OpenQuestWindoow();
+            }
+
         }
     }
 
@@ -54,8 +61,6 @@ public class DialogDisplay : MonoBehaviour
     {
         Line line = conversation.lines[activeLineIndex];
         Character character = line.character;
-
-        //conversation.quest = true;
 
         if (speakerUI_2.SpeakerIs(character))
         {
