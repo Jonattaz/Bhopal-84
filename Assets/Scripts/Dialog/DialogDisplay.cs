@@ -52,14 +52,15 @@ public class DialogDisplay : MonoBehaviour
             speakerUI_1.Hide();
             activeLineIndex = 0;
 
-            if(conversation.quest && !quest.isActive && !PlayerInventory.instance.questObjective){
+            
+            if(conversation.quest && !quest.isActive && !PlayerInventory.instance.inQuest && !questGiver.completed){
                 questGiver.OpenQuestWindoow();
+                PlayerInventory.instance.inQuest = true;
             }
 
-            if(PlayerInventory.instance.questObjective){
-    
+            if(PlayerInventory.instance.questObjective && questGiver.localActive){
                 questGiver.CompleteQuest();
-                conversation.quest = false;
+                PlayerInventory.instance.inQuest = false;
             }
         }
     }

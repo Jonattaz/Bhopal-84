@@ -19,6 +19,8 @@ public class PlayerInventory : MonoBehaviour
 
     [HideInInspector]
     public bool questObjective;
+
+    public bool inQuest = false;
     private void Awake()
     {
         instance = this;
@@ -52,6 +54,7 @@ public class PlayerInventory : MonoBehaviour
     public void QuestItem(Item item){
 
         if(questGivers[index].neededItemHolder == item.itemName){
+            questGivers[index].completed = true;
             questObjective = true;
             UI.instaceUI.UseItems(item, items.Count - 1);
         }

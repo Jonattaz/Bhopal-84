@@ -13,7 +13,10 @@ public class QuestGiver : MonoBehaviour
     public Text title;
     public Text description;
     public Text neededItem;
-    public bool completed;
+    public bool completed = false;
+
+    [HideInInspector]
+    public bool localActive;
 
 
     [HideInInspector]
@@ -21,7 +24,6 @@ public class QuestGiver : MonoBehaviour
     public int questIndex;
     
     private void Awake() {
-        completed = false;
         instance = this;
     }
 
@@ -33,18 +35,19 @@ public class QuestGiver : MonoBehaviour
         neededItem.text = "Item necessário - " + quest.neededItem;
         neededItemHolder = quest.neededItem;
         quest.isActive = true;
+        localActive = quest.isActive;
         playerQuests.quests[questIndex] = quest;
     }
 
     public void CompleteQuest(){
-
+        
         PlayerInventory.instance.questObjective = false;
         questWindow.SetActive(false);
         quest.isActive = false;
         title.text = "";
         description.text = "";
         neededItem.text = "";
-        completed = true;
+        localActive = quest.isActive;
         PlayerInventory.instance.index++;
         Destroy(this.gameObject);
     }

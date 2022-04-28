@@ -30,15 +30,17 @@ public class DialogPopUp : MonoBehaviour
         { 
             image.color = endColor;
             
-            if(!PlayerInventory.instance.questObjective && !questGiver.completed){
+            
+            if(!questGiver.completed){
                 dialogBeforeQuest.SetActive(true);
             }else{
                 dialogAfterQuest.SetActive(true);
             }
-            
-            print("Player Inventory: Quest Objective" + PlayerInventory.instance.questObjective);
-            print( "Quest Giver: completed " + questGiver.completed);
-                
+
+           // print("Quest Giver: Local Active " + questGiver.localActive);
+           // print("Player Inventory: Quest Objective " + PlayerInventory.instance.questObjective);
+           // print( "Quest Giver: completed " + questGiver.completed);
+           // print("Player Inventory: In Quest " + PlayerInventory.instance.inQuest);    
         }
 
     }
