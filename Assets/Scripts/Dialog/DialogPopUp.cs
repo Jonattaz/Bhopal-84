@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class DialogPopUp : MonoBehaviour
 {
     // GameObject do dialogo
-    public GameObject dialog;
+    public GameObject dialogBeforeQuest;
+    public GameObject dialogAfterQuest;
     
     [SerializeField]private string tagName;
 
@@ -15,6 +16,8 @@ public class DialogPopUp : MonoBehaviour
     [SerializeField]private Color endColor;
 
     [SerializeField]private Color startColor;
+
+    public QuestGiver questGiver;
 
     // Start is called before the first frame update
    private void Start() {
@@ -26,7 +29,16 @@ public class DialogPopUp : MonoBehaviour
         if (collision.CompareTag(tagName))
         { 
             image.color = endColor;
-            dialog.SetActive(true);
+            
+            if(!PlayerInventory.instance.questObjective && !questGiver.completed){
+                dialogBeforeQuest.SetActive(true);
+            }else{
+                dialogAfterQuest.SetActive(true);
+            }
+            
+            print("Player Inventory: Quest Objective" + PlayerInventory.instance.questObjective);
+            print( "Quest Giver: completed " + questGiver.completed);
+                
         }
 
     }
@@ -36,7 +48,8 @@ public class DialogPopUp : MonoBehaviour
         if (collision.CompareTag(tagName))
         {
             image.color = startColor;
-            dialog.SetActive(false);
+            dialogBeforeQuest.SetActive(false);    
+            dialogAfterQuest.SetActive(false);
         }
     }
 }

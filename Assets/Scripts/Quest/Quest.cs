@@ -6,7 +6,6 @@ using UnityEngine;
 public class Quest 
 {
     public bool isActive;
-
     public QuestGoal goal;
     public string title;
     public string description;

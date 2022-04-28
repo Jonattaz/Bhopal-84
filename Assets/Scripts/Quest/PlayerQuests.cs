@@ -6,6 +6,7 @@ public class PlayerQuests : MonoBehaviour
 {
     public Quest[] quests;
 
+
     // Start is called before the first frame update
     void Start()
     {

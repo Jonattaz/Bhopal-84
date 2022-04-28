@@ -16,6 +16,8 @@ public class DialogDisplay : MonoBehaviour
 
     private int activeLineIndex = 0;
 
+    public QuestGiver questGiver;
+
     public Quest quest;
 
     // Start is called before the first frame update
@@ -50,10 +52,15 @@ public class DialogDisplay : MonoBehaviour
             speakerUI_1.Hide();
             activeLineIndex = 0;
 
-            if(conversation.quest && !quest.isActive){
-                QuestGiver.instance.OpenQuestWindoow();
+            if(conversation.quest && !quest.isActive && !PlayerInventory.instance.questObjective){
+                questGiver.OpenQuestWindoow();
             }
 
+            if(PlayerInventory.instance.questObjective){
+    
+                questGiver.CompleteQuest();
+                conversation.quest = false;
+            }
         }
     }
 

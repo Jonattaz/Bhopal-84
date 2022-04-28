@@ -8,17 +8,20 @@ public class QuestGiver : MonoBehaviour
     public Quest quest;
     public PlayerQuests playerQuests;
 
-    public static QuestGiver instance;
+    public QuestGiver instance;
     public GameObject questWindow;
     public Text title;
     public Text description;
     public Text neededItem;
+    public bool completed;
+
 
     [HideInInspector]
     public string neededItemHolder;
     public int questIndex;
     
     private void Awake() {
+        completed = false;
         instance = this;
     }
 
@@ -35,11 +38,15 @@ public class QuestGiver : MonoBehaviour
 
     public void CompleteQuest(){
 
+        PlayerInventory.instance.questObjective = false;
         questWindow.SetActive(false);
         quest.isActive = false;
         title.text = "";
         description.text = "";
         neededItem.text = "";
+        completed = true;
+        PlayerInventory.instance.index++;
+        Destroy(this.gameObject);
     }
 
     private void OnTriggerEnter(Collider other) {

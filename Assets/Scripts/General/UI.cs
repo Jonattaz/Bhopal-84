@@ -107,9 +107,7 @@ public class UI : MonoBehaviour
 
     public void UseItems(Item item, int index)
     {
-        inventoryItems[index].text = "Used " + item.collectMessage;
-        collectText.text = item.collectMessage + " foi coletado";
-        StartCoroutine(FadingText());
+        inventoryItems[index].text = item.collectMessage + " - Usado";
     }
 
     IEnumerator FadingText()

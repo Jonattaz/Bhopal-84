@@ -13,10 +13,18 @@ public class PlayerInventory : MonoBehaviour
 
     public Quest quest;
 
+    public QuestGiver[] questGivers;
+
+    public int index = 0;
+
+    [HideInInspector]
+    public bool questObjective;
     private void Awake()
     {
         instance = this;
+        
     }
+    
 
     public void AddItem(Item item)
     {
@@ -24,33 +32,28 @@ public class PlayerInventory : MonoBehaviour
         {   
             return;
         }
-        // Verificar o nome do item
-
-        QuestItem(item);
         UI.instaceUI.SetItems(item, items.Count);
         items.Add(item);
+        QuestItem(item);
     }
 
 
+    // Não Funciona
     public void RemoveItem(Item item)
     {
         if (items.Contains(item))
         {
             return;
         }
-        UI.instaceUI.UseItems(item, items.Count);
+        UI.instaceUI.UseItems(item, items.Count - 1);
         items.Remove(item);
     }
 
     public void QuestItem(Item item){
 
-        if(QuestGiver.instance.neededItemHolder == item.itemName){
-            print("Item correto coletado");
-        }else{
-            print("Noooooo");
-            // O nome do needed item não está sendo atribuido
-            print(QuestGiver.instance.neededItemHolder + " needed item");
-            print(item.itemName + " collected item");
+        if(questGivers[index].neededItemHolder == item.itemName){
+            questObjective = true;
+            UI.instaceUI.UseItems(item, items.Count - 1);
         }
     }
 
@@ -59,7 +62,7 @@ public class PlayerInventory : MonoBehaviour
         if(itemPrefab != null){
             Destroy(itemPrefab);
         }
-        QuestItem(items[index]);
+       QuestItem(items[index]);
        itemPrefab = Instantiate(items[index].prefab, new Vector3(1000,1000,1000), Quaternion.identity);
        UI.instaceUI.Set3DCaptions(items[index].text);
         
