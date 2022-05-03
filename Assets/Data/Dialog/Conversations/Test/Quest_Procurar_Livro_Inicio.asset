@@ -17,5 +17,5 @@ MonoBehaviour:
   speakerRight: {fileID: 11400000, guid: 37ffbcfca4c01ed428584b5b21a587e7, type: 2}
   lines:
   - character: {fileID: 11400000, guid: 37ffbcfca4c01ed428584b5b21a587e7, type: 2}
-    text: "Eae meu bom? Voc\xEA quer saber o que est\xE1 acontencendo, ent\xE3o primeiro
+    text: "Eae meu bom? Voc\xEA quer saber o que est\xE1 acontecendo, ent\xE3o primeiro
       voc\xEA deve encontrar o meu livro. Acho que deixei ele cair aqui perto"
