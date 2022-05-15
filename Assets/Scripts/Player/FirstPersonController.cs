@@ -630,6 +630,7 @@ public class FirstPersonController : MonoBehaviour
     {
         currentHealth = 0;
         if (regeneratingHealth != null) StopCoroutine(regeneratingHealth);
+        PauseMenu.MenuInstance.SceneLoad(0);
         
     }
 
