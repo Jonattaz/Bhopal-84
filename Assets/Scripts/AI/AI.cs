@@ -10,10 +10,19 @@ public class AI : MonoBehaviour
     private Transform[] waypoints;
     int waypointIndex;
     Vector3 target;
-    [SerializeField]
-    bool stop;
+
+[HideInInspector]
+   public bool stop;
     Animator anim;
-   
+
+    public bool canTalk;
+
+   public static AI instanceAI;
+
+   private void Awake() {
+      instanceAI = this;
+   }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +55,7 @@ public class AI : MonoBehaviour
         }
         agent.SetDestination(target);
          if(this.transform.position == target){
+            canTalk = true;
             anim.SetBool("Walking", false);
          }
     }

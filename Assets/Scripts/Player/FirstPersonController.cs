@@ -135,6 +135,8 @@ public class FirstPersonController : MonoBehaviour
 
     public static Action<float> OnDamage;
 
+    private bool canTakeDamage;
+
     public static Action<float> OnHeal;
 
     [Header("Stamina Parameters")]
@@ -628,8 +630,7 @@ public class FirstPersonController : MonoBehaviour
     {
         currentHealth = 0;
         if (regeneratingHealth != null) StopCoroutine(regeneratingHealth);
-
-        print("You died");
+        
     }
 
     private IEnumerator CrouchStand()
@@ -734,4 +735,27 @@ public class FirstPersonController : MonoBehaviour
 
         regeneratingStamina = null;
     }
+
+    private void OnTriggerEnter(Collider other) {
+        if(other.gameObject.tag == "Fog"){
+            canTakeDamage = true;
+        }
+    }
+
+    private void OnTriggerStay(Collider other) {
+        if(other.gameObject.tag == "Fog"){
+          if(canTakeDamage){
+            StartCoroutine(DamageTime());
+            ApplyDamage(5);
+          }
+        }
+    }
+
+    IEnumerator DamageTime(){
+        canTakeDamage = false;
+        yield return new WaitForSeconds(2);
+        canTakeDamage = true;
+        
+    }
+
 }

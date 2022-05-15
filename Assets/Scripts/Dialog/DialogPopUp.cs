@@ -28,15 +28,18 @@ public class DialogPopUp : MonoBehaviour
     {
         if (collision.CompareTag(tagName))
         { 
-            image.color = endColor;
             
+            AI.instanceAI.stop = true;
             
-            if(!questGiver.completed){
-                dialogBeforeQuest.SetActive(true);
-            }else{
-                dialogAfterQuest.SetActive(true);
-            }
-
+           if(AI.instanceAI.canTalk){ 
+                image.color = endColor;
+    
+                if(!questGiver.completed){
+                    dialogBeforeQuest.SetActive(true);
+                 }else{
+                    dialogAfterQuest.SetActive(true);
+                }
+           }
            // print("Quest Giver: Local Active " + questGiver.localActive);
            // print("Player Inventory: Quest Objective " + PlayerInventory.instance.questObjective);
            // print( "Quest Giver: completed " + questGiver.completed);
