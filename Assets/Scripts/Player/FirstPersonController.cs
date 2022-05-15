@@ -47,9 +47,6 @@ public class FirstPersonController : MonoBehaviour
     private bool canInteract = true;
 
     [SerializeField]
-    private bool useFootsteps = true;
-
-    [SerializeField]
     private bool useStamina = true;
 
     [SerializeField]
@@ -223,37 +220,6 @@ public class FirstPersonController : MonoBehaviour
 
     private Coroutine zoomRoutine;
 
-    [Header("Footstep Parameters")]
-    [SerializeField]
-    private float baseStepSpeed = 0.5f;
-
-    [SerializeField]
-    private float crouchStepMultiplier = 1.5f;
-
-    [SerializeField]
-    private float sprintStepMultiplier = 0.6f;
-
-    [SerializeField]
-    private AudioSource footstepAudioSource = default;
-
-    [SerializeField]
-    private AudioClip[] woodClips = default;
-
-    [SerializeField]
-    private AudioClip[] metalClips = default;
-
-    [SerializeField]
-    private AudioClip[] grassClips = default;
-
-    private float footstepTimer = 0;
-
-    private float GetCurrentOffset =>
-        isCrouching
-            ? baseStepSpeed * crouchStepMultiplier
-            : IsSprinting
-                ? baseStepSpeed * sprintStepMultiplier
-                : baseStepSpeed;
-
     [Header("Flashlight")]
     [SerializeField]
     private GameObject flashlight;
@@ -386,11 +352,6 @@ public class FirstPersonController : MonoBehaviour
                         {
                             HandleZoom();
                         }
-
-                        if (useFootsteps)
-                        {
-                            HandleFootsteps();
-                        }
                         if (canInteract)
                         {
                             HandleInteractionInput();
@@ -464,25 +425,12 @@ public class FirstPersonController : MonoBehaviour
     private void HandleMovementInput()
     {
         // O uso de operador ternario é para verificar caso o isSprinting seja verdadeiro então a velocidade usada será sprintSpeed
-        currentInput =
-            new Vector2((
-                isCrouching
-                    ? crouchSpeed
-                    : IsSprinting ? sprintSpeed : walkSpeed
-                ) *
-                Input.GetAxis("Vertical"),
-                (
-                isCrouching
-                    ? crouchSpeed
-                    : IsSprinting ? sprintSpeed : walkSpeed
-                ) *
-                Input.GetAxis("Horizontal"));
+        currentInput =new Vector2((isCrouching ? crouchSpeed : IsSprinting ? sprintSpeed : walkSpeed) * Input.GetAxis("Vertical"),(isCrouching? crouchSpeed : IsSprinting ? sprintSpeed : walkSpeed) *Input.GetAxis("Horizontal"));
 
         float moveDirectionY = moveDirection.y;
-        moveDirection =
-            (transform.TransformDirection(Vector3.forward) * currentInput.x) +
-            (transform.TransformDirection(Vector3.right) * currentInput.y);
+        moveDirection = (transform.TransformDirection(Vector3.forward) * currentInput.x) + (transform.TransformDirection(Vector3.right) * currentInput.y);
         moveDirection.y = moveDirectionY;
+
     }
 
     private void HandleMouseLook()
@@ -662,51 +610,6 @@ public class FirstPersonController : MonoBehaviour
         }
 
         characterController.Move(moveDirection * Time.deltaTime);
-    }
-
-    private void HandleFootsteps()
-    {
-        if (!characterController.isGrounded) return;
-
-        if (currentInput == Vector2.zero) return;
-
-        if (footstepTimer <= 0)
-        {
-            if (
-                Physics
-                    .Raycast(playerCamera.transform.position,
-                    Vector3.down,
-                    out RaycastHit hit,
-                    3)
-            )
-            {
-                switch (hit.collider.tag)
-                {
-                    // Colocar o nome das tags que representam cada tipo de chão
-                    case "Footsteps/Wood":
-                        footstepAudioSource
-                            .PlayOneShot(woodClips[UnityEngine
-                                .Random
-                                .Range(0, woodClips.Length - 1)]);
-                        break;
-                    case "Footsteps/Metal":
-                        footstepAudioSource
-                            .PlayOneShot(woodClips[UnityEngine
-                                .Random
-                                .Range(0, metalClips.Length - 1)]);
-                        break;
-                    case "Footsteps/Grass":
-                        footstepAudioSource
-                            .PlayOneShot(woodClips[UnityEngine
-                                .Random
-                                .Range(0, grassClips.Length - 1)]);
-                        break;
-                    default:
-                        break;
-                }
-            }
-            footstepTimer = GetCurrentOffset;
-        }
     }
 
     private void ApplyDamage(float dmg)
