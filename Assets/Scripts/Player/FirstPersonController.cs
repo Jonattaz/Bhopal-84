@@ -236,14 +236,7 @@ public class FirstPersonController : MonoBehaviour
     {
         get
         {
-            if (
-                characterController.isGrounded &&
-                Physics
-                    .Raycast(transform.position,
-                    Vector3.down,
-                    out RaycastHit slopehit,
-                    2f)
-            )
+            if (characterController.isGrounded && Physics.Raycast(transform.position,Vector3.down,out RaycastHit slopehit, 5f))
             {
                 hitPointNormal = slopehit.normal;
                 return Vector3.Angle(hitPointNormal, Vector3.up) >

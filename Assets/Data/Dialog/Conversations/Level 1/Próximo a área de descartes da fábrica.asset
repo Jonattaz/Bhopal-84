@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: "Pr\xF3ximo a \xE1rea de descartes da f\xE1brica"
   m_EditorClassIdentifier: 
   quest: 0
-  speakerLeft: {fileID: 11400000, guid: 37ffbcfca4c01ed428584b5b21a587e7, type: 2}
-  speakerRight: {fileID: 11400000, guid: 37ffbcfca4c01ed428584b5b21a587e7, type: 2}
+  speakerLeft: {fileID: 11400000, guid: b3005e8140a45404992fca714f5281a5, type: 2}
+  speakerRight: {fileID: 11400000, guid: b3005e8140a45404992fca714f5281a5, type: 2}
   lines:
-  - character: {fileID: 11400000, guid: 37ffbcfca4c01ed428584b5b21a587e7, type: 2}
-    text: "\u2018N\xE3o tem ningu\xE9m que consiga melhorar as nossas vidas aqui.
-      Tudo parece um lix\xE3o por conta dessa f\xE1brica. Perdi minha esposa por
-      conta desses porcos\u2026\u2019\r\n\u2018Cof cof, cof cof*.\u2019"
+  - character: {fileID: 11400000, guid: b3005e8140a45404992fca714f5281a5, type: 2}
+    text: "\u2018Cof, cof*. Hoje o dia na f\xE1brica foi bem puxado\u2026 Estava
+      com um cheiro bem forte, n\xE3o acha? Cof cof.\u2019"
+  - character: {fileID: 11400000, guid: b3005e8140a45404992fca714f5281a5, type: 2}
+    text: "\u2018Ainda bem que temos trabalho! Conseguimos pelo menos pagar alguma
+      comida.\u2019\n\u2018Cof cof, cof cof*.\u2019"

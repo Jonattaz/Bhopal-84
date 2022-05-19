@@ -16,7 +16,8 @@ public class AI : MonoBehaviour
     Animator anim;
 
     public bool canTalk;
-
+   [SerializeField]
+   private bool canWalk;
    public static AI instanceAI;
 
    private void Awake() {
@@ -44,6 +45,7 @@ public class AI : MonoBehaviour
 
     void UpdateDestination()
     {
+      if(canWalk){
         if (!stop)
         {
             anim.SetBool("Walking", true);
@@ -58,6 +60,7 @@ public class AI : MonoBehaviour
             canTalk = true;
             anim.SetBool("Walking", false);
          }
+      }
     }
 
     void ResetWaypointIndex()
