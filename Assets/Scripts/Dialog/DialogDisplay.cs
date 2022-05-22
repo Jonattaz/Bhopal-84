@@ -51,7 +51,6 @@ public class DialogDisplay : MonoBehaviour
             speakerUI_2.Hide();
             speakerUI_1.Hide();
             activeLineIndex = 0;
-
             
             if(conversation.quest && !quest.isActive && !PlayerInventory.instance.inQuest && !questGiver.completed){
                 questGiver.OpenQuestWindoow();

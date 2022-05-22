@@ -11,7 +11,7 @@ public class AI : MonoBehaviour
     int waypointIndex;
     Vector3 target;
 
-[HideInInspector]
+  [HideInInspector]
    public bool stop;
     Animator anim;
 
@@ -36,7 +36,7 @@ public class AI : MonoBehaviour
     void Update()
     {
    
-        if (Vector3.Distance(transform.position, target) < 1)
+        if (Vector3.Distance(transform.position, target) < 0.5f)
         {
             ResetWaypointIndex();
             UpdateDestination();

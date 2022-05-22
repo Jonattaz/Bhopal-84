@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 410766b47f10e534f94cc0503a3acf23, type: 3}
+  m_Name: "Pr\xF3ximo a \xE1rea de discartes"
+  m_EditorClassIdentifier: 
+  quest: 0
+  speakerLeft: {fileID: 11400000, guid: d3c10678144e8044a8dddef7f6543716, type: 2}
+  speakerRight: {fileID: 11400000, guid: d3c10678144e8044a8dddef7f6543716, type: 2}
+  lines:
+  - character: {fileID: 11400000, guid: d3c10678144e8044a8dddef7f6543716, type: 2}
+    text: "\u2018N\xE3o tem ningu\xE9m que consiga melhorar as nossas vidas aqui.
+      Tudo parece um lix\xE3o por conta dessa f\xE1brica. Perdi minha esposa por
+      conta desses porcos\u2026\u2019Cof cof, cof cof*.\u2019\n"
