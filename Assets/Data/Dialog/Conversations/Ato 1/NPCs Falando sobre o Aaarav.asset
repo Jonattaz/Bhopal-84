@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 410766b47f10e534f94cc0503a3acf23, type: 3}
+  m_Name: NPCs Falando sobre o Aaarav
+  m_EditorClassIdentifier: 
+  quest: 0
+  speakerLeft: {fileID: 11400000, guid: 8fdf0c0f3e0970a428e7dfba2a04ebcd, type: 2}
+  speakerRight: {fileID: 11400000, guid: 84e127e4affd03a4e86760c830e4996c, type: 2}
+  lines:
+  - character: {fileID: 11400000, guid: 8fdf0c0f3e0970a428e7dfba2a04ebcd, type: 2}
+    text: "Voc\xEA ficou sabendo da \xFAltima?\r"
+  - character: {fileID: 11400000, guid: 84e127e4affd03a4e86760c830e4996c, type: 2}
+    text: "O qu\xEA?\r"
+  - character: {fileID: 11400000, guid: 8fdf0c0f3e0970a428e7dfba2a04ebcd, type: 2}
+    text: " O senhor Aarav caiu da escada na semana passada! Foi para o hospital
+      mas j\xE1\r\nest\xE1 bem. S\xF3 est\xE1 precisando de ajuda com algumas coisas
+      da casa."
+  - character: {fileID: 11400000, guid: 84e127e4affd03a4e86760c830e4996c, type: 2}
+    text: "Coitado!\r"

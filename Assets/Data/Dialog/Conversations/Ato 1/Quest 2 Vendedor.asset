@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 410766b47f10e534f94cc0503a3acf23, type: 3}
+  m_Name: Quest 2 Vendedor
+  m_EditorClassIdentifier: 
+  quest: 0
+  speakerLeft: {fileID: 11400000, guid: 4cc42392f6150774196c73ded3f5116a, type: 2}
+  speakerRight: {fileID: 11400000, guid: 4cc42392f6150774196c73ded3f5116a, type: 2}
+  lines:
+  - character: {fileID: 11400000, guid: 4cc42392f6150774196c73ded3f5116a, type: 2}
+    text: "Ol\xE1, Manoj. Voc\xEA viu que o senhor Aarav est\xE1 todo descadeirado,
+      caiu\r da escada. Quem mandou ser um velho safado, hahaha! Est\xE3o dizendo
+      por a\xED que ele\r andou dando uns xavecos na vizinha e a esposa dele viu."
+  - character: {fileID: 11400000, guid: 4cc42392f6150774196c73ded3f5116a, type: 2}
+    text: "Ok, vou pegar as coisas aqui para voc\xEA. S\xF3 um minuto! "
+  - character: {fileID: 11400000, guid: 4cc42392f6150774196c73ded3f5116a, type: 2}
+    text: "Aqui est\xE1."
+  - character: {fileID: 11400000, guid: 4cc42392f6150774196c73ded3f5116a, type: 2}
+    text: "Valeu, Manoj ! Bom descanso pra voc\xEA."
