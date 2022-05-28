@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2934390894146144270
+--- !u!1 &1442605193552909934
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2934390894146144261}
-  - component: {fileID: 2934390894146144266}
-  - component: {fileID: 2934390894146144267}
-  - component: {fileID: 2934390894146144264}
-  - component: {fileID: 2934390894146144265}
-  m_Layer: 6
-  m_Name: Book
+  - component: {fileID: 3863225106041447878}
+  - component: {fileID: 8498280353870604132}
+  - component: {fileID: 2376317107804461688}
+  - component: {fileID: 3968345329525240833}
+  - component: {fileID: 3968345329525240832}
+  m_Layer: 0
+  m_Name: Chave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2934390894146144261
+--- !u!4 &3863225106041447878
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2934390894146144270}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.32, y: 0.73, z: 9.831}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_GameObject: {fileID: 1442605193552909934}
+  m_LocalRotation: {x: -0.278934, y: -0.27893406, z: 0.64976597, w: 0.64976597}
+  m_LocalPosition: {x: -8.426, y: -0.0045861006, z: 99.298}
+  m_LocalScale: {x: 1, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2934390894146144266
+  m_LocalEulerAnglesHint: {x: 0, y: -46.466, z: 90}
+--- !u!33 &8498280353870604132
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2934390894146144270}
-  m_Mesh: {fileID: 4300000, guid: bc1fd310dcc9a1741a5af827987b033d, type: 3}
---- !u!23 &2934390894146144267
+  m_GameObject: {fileID: 1442605193552909934}
+  m_Mesh: {fileID: -5076798556035486163, guid: 6cf5e0157c604ba458928d48437e8379, type: 3}
+--- !u!23 &2376317107804461688
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2934390894146144270}
+  m_GameObject: {fileID: 1442605193552909934}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 51ed175570710df4cb7effdd44c97ffa, type: 2}
+  - {fileID: 2100000, guid: bb31b0af5046338418465fec3fc6c8c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -83,33 +83,33 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2934390894146144264
+--- !u!65 &3968345329525240833
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2934390894146144270}
+  m_GameObject: {fileID: 1442605193552909934}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2934390894146144265
+--- !u!114 &3968345329525240832
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2934390894146144270}
+  m_GameObject: {fileID: 1442605193552909934}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7185b7f0372178408a9f3b07041aaf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   intergirText: {fileID: 0}
-  item: {fileID: 11400000, guid: 9c5fd90adee59de48b7cc7b7323b5315, type: 2}
+  item: {fileID: 11400000, guid: d50eddc33f67bd84b9ceb9a63ab4a686, type: 2}
   textController: 0
   interacting: 0
   audioPlayer: {fileID: 0}

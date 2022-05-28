@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Conversa floricultura
   m_EditorClassIdentifier: 
   quest: 0
-  speakerLeft: {fileID: 0}
-  speakerRight: {fileID: 0}
+  speakerLeft: {fileID: 11400000, guid: 9645ff8cb43a8284c98abcbc1881eb32, type: 2}
+  speakerRight: {fileID: 11400000, guid: 40dd23e6e7c09dd4bbf20b7ed44ec19a, type: 2}
   lines:
-  - character: {fileID: 0}
-    text: "O senhor Akshay realmente demorou para entregar minhas c\xF3pias hoje.
-      Ele comentou com\r\noutro cliente que estava esperando s\xF3 a \xFAltima entrega
-      para encerrar o dia."
+  - character: {fileID: 11400000, guid: 9645ff8cb43a8284c98abcbc1881eb32, type: 2}
+    text: "O senhor Akshay realmente demorou para entregar minhas c\xF3pias hoje. "
+  - character: {fileID: 11400000, guid: 40dd23e6e7c09dd4bbf20b7ed44ec19a, type: 2}
+    text: "Ele comentou com\r outro cliente que estava esperando s\xF3 a \xFAltima
+      entrega para encerrar o dia."
