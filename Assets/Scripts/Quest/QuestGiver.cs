@@ -19,7 +19,7 @@ public class QuestGiver : MonoBehaviour
     public bool localActive;
 
 
-    [HideInInspector]
+    //[HideInInspector]
     public string neededItemHolder;
     public int questIndex;
     
@@ -27,9 +27,8 @@ public class QuestGiver : MonoBehaviour
         instance = this;
     }
 
-    public void OpenQuestWindoow(){
+    public void OpenQuestWindow(){
         questWindow.SetActive(true);
-
         title.text = quest.title;
         description.text = quest.description;
         neededItem.text = "Item necessário - " + quest.neededItem;
@@ -51,11 +50,4 @@ public class QuestGiver : MonoBehaviour
         PlayerInventory.instance.index++;
         Destroy(this.gameObject);
     }
-
-    private void OnTriggerEnter(Collider other) {
-        if(other.gameObject.CompareTag("Player")){
-            OpenQuestWindoow();
-        }        
-    }
-
 }

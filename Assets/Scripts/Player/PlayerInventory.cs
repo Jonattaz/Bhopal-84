@@ -16,6 +16,8 @@ public class PlayerInventory : MonoBehaviour
     public QuestGiver[] questGivers;
 
     public int index = 0;
+    public int LastQuestIndex;
+    public int nextLevel;
 
     [HideInInspector]
     public bool questObjective;
@@ -27,6 +29,16 @@ public class PlayerInventory : MonoBehaviour
         
     }
     
+    private void Update() {
+        if(LastQuestIndex == index){
+            StartCoroutine(WaitForSceneLoad());
+        }
+    }
+
+     private IEnumerator WaitForSceneLoad() {
+        yield return new WaitForSeconds(2);
+        PauseMenu.MenuInstance.SceneLoad(nextLevel);
+     }
 
     public void AddItem(Item item)
     {

@@ -52,14 +52,19 @@ public class DialogDisplay : MonoBehaviour
             speakerUI_1.Hide();
             activeLineIndex = 0;
             
-            if(conversation.quest && !quest.isActive && !PlayerInventory.instance.inQuest && !questGiver.completed){
-                questGiver.OpenQuestWindoow();
-                PlayerInventory.instance.inQuest = true;
-            }
+    
+            if(conversation.quest ){
+                if(!quest.isActive && !PlayerInventory.instance.inQuest){
+                    if(PlayerInventory.instance.index == questGiver.questIndex && !questGiver.completed){
+                        questGiver.OpenQuestWindow();
+                        PlayerInventory.instance.inQuest = true;
+                    }
+                }
 
-            if(PlayerInventory.instance.questObjective && questGiver.localActive){
-                questGiver.CompleteQuest();
-                PlayerInventory.instance.inQuest = false;
+                if(PlayerInventory.instance.questObjective && questGiver.localActive){
+                    questGiver.CompleteQuest();
+                    PlayerInventory.instance.inQuest = false;
+                }
             }
         }
     }

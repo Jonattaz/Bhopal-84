@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 410766b47f10e534f94cc0503a3acf23, type: 3}
   m_Name: "Quest 01. Crian\xE7as perderam a bola em cima do telhado AfterQuest"
   m_EditorClassIdentifier: 
-  quest: 0
+  quest: 1
   speakerLeft: {fileID: 11400000, guid: 6c1cb4e5c2de00146b5e8e890df34cb8, type: 2}
   speakerRight: {fileID: 11400000, guid: 6a58d8d3c42f4c54f816fc4b36a71e3f, type: 2}
   lines:
