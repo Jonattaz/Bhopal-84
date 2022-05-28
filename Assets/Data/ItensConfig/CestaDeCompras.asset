@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7d8e94ba6d89c48bab304f399f27ad, type: 3}
+  m_Name: CestaDeCompras
+  m_EditorClassIdentifier: 
+  grabbable: 1
+  audioClip: {fileID: 0}
+  text: "Estas s\xE3o as compras do Sr Aarav"
+  inventoryItem: 1
+  collectMessage: Cesta
+  prefab: {fileID: 7252573694631460832, guid: 4d34e31c57cab2449acbf3149a50150e, type: 3}
+  itemName: Cesta
+  flashlight: 0

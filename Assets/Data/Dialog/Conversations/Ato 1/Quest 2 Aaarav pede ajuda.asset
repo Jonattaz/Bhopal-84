@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 410766b47f10e534f94cc0503a3acf23, type: 3}
   m_Name: Quest 2 Aaarav pede ajuda
   m_EditorClassIdentifier: 
-  quest: 0
+  quest: 1
   speakerLeft: {fileID: 11400000, guid: 37ffbcfca4c01ed428584b5b21a587e7, type: 2}
   speakerRight: {fileID: 11400000, guid: 37ffbcfca4c01ed428584b5b21a587e7, type: 2}
   lines:
