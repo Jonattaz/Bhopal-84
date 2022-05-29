@@ -17,5 +17,5 @@ MonoBehaviour:
   speakerRight: {fileID: 11400000, guid: 6812f064ffe67af42ba8d42844c0762d, type: 2}
   lines:
   - character: {fileID: 11400000, guid: 6812f064ffe67af42ba8d42844c0762d, type: 2}
-    text: "\u2018As pessoas n\xE3o param de chegar com tosse e dores de barriga no
-      PS. Essa f\xE1brica est\xE1 acabando com todo mundo da cidade!\u2019"
+    text: "As pessoas n\xE3o param de chegar com tosse e dores de barriga. Essa f\xE1brica
+      est\xE1 acabando com todo mundo da cidade!"

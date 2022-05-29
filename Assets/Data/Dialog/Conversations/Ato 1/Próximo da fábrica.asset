@@ -17,8 +17,10 @@ MonoBehaviour:
   speakerRight: {fileID: 11400000, guid: b3005e8140a45404992fca714f5281a5, type: 2}
   lines:
   - character: {fileID: 11400000, guid: b3005e8140a45404992fca714f5281a5, type: 2}
-    text: "\u2018Cof, cof*. Hoje o dia na f\xE1brica foi bem puxado\u2026 Estava
-      com um cheiro bem forte, n\xE3o acha? Cof cof.\u2019"
+    text: "Cof, cof. Hoje o dia na f\xE1brica foi bem puxado\u2026 Estava com um
+      cheiro bem forte, n\xE3o acha? Cof cof."
   - character: {fileID: 11400000, guid: b3005e8140a45404992fca714f5281a5, type: 2}
-    text: "\u2018Ainda bem que temos trabalho! Conseguimos pelo menos pagar alguma
-      comida.\u2019\n\u2018Cof cof, cof cof*.\u2019"
+    text: 'Ainda bem que temos trabalho! Conseguimos pelo menos pagar alguma comida.
+
+      Cof
+      cof, cof cof.'

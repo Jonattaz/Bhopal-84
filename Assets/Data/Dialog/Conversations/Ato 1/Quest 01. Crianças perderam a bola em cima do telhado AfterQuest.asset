@@ -24,7 +24,7 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: 6c1cb4e5c2de00146b5e8e890df34cb8, type: 2}
     text: Muito obrigada, senhor!
   - character: {fileID: 11400000, guid: 6a58d8d3c42f4c54f816fc4b36a71e3f, type: 2}
-    text: 'Valeu ai, tio! Se precisar de alguma coisa, pode me encontrar na [rua
-      nome a definir].
+    text: 'Valeu ai, tio! Se precisar de alguma coisa, pode me encontrar por aqui
+      jogando bola.
 
 '

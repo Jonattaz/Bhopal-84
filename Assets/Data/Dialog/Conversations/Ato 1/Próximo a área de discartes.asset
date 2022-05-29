@@ -17,6 +17,6 @@ MonoBehaviour:
   speakerRight: {fileID: 11400000, guid: 453fe5ed9b2de6342b89f50ff8f40086, type: 2}
   lines:
   - character: {fileID: 11400000, guid: 453fe5ed9b2de6342b89f50ff8f40086, type: 2}
-    text: "\u2018N\xE3o tem ningu\xE9m que consiga melhorar as nossas vidas aqui.
-      Tudo parece um lix\xE3o por conta dessa f\xE1brica. Perdi minha esposa por
-      conta desses porcos\u2026\u2019Cof cof, cof cof*.\u2019\n"
+    text: "N\xE3o tem ningu\xE9m que consiga melhorar as nossas vidas aqui. Tudo
+      parece um lix\xE3o por conta dessa f\xE1brica. Perdi minha esposa por conta
+      desses porcos\u2026Cof cof, cof cof.\n"

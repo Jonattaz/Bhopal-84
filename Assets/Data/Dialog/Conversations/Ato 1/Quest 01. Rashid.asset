@@ -18,10 +18,9 @@ MonoBehaviour:
   lines:
   - character: {fileID: 11400000, guid: 07bdb6ac91438e1469c2febad6c400c7, type: 2}
     text: "Essas crian\xE7as n\xE3o fazem nada al\xE9m de ficar causando aqui perto
-      da minha casa. Toda semana elas jogam essa bosta de bola aqui no meu telhado.\u2019\r\n\u2018Cof,
-      cof*.\u2019\r\n"
+      da minha casa. Toda semana elas jogam essa bosta de bola aqui no meu telhado.\nCof,
+      cof*.\n"
   - character: {fileID: 11400000, guid: 07bdb6ac91438e1469c2febad6c400c7, type: 2}
-    text: "\u2018Odeio essas crian\xE7as. N\xE3o fazem nada de \xFAtil. Tinham que
-      trabalhar pra ver o que \xE9 bom, cof cof*. Ainda mais aquela crian\xE7a [dar
-      caracter\xEDsticas f\xEDsicas da crian\xE7a 02], s\xF3 arruma confus\xE3o e
-      faz umas coisas erradas. Cof, cof*.\u2019"
+    text: "Odeio essas crian\xE7as. N\xE3o fazem nada de \xFAtil. Tinham que trabalhar
+      pra ver o que \xE9 bom, cof cof*. Ainda mais aquela crian\xE7a que s\xF3 arruma
+      confus\xE3o e faz umas coisas erradas. Cof, cof*."

@@ -17,7 +17,7 @@ MonoBehaviour:
   speakerRight: {fileID: 11400000, guid: 37ffbcfca4c01ed428584b5b21a587e7, type: 2}
   lines:
   - character: {fileID: 11400000, guid: 37ffbcfca4c01ed428584b5b21a587e7, type: 2}
-    text: "\u2018Ai, ai, ai\u2026 minhas costas est\xE3o me matando! Ah, ol\xE1 Manoj.
+    text: "Ai, ai, ai\u2026 minhas costas est\xE3o me matando! Ah, ol\xE1 Manoj.
       Ser\xE1 que voc\xEA poderia me\r ajudar com uma coisa? Eu estou precisando
       de umas coisas do mercado s\xF3 que n\xE3o estou\r conseguindo segurar peso
       ou caminhar direito. Vou te entregar uma listinha e o dinheiro."
