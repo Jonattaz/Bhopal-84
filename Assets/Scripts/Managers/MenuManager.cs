@@ -14,17 +14,14 @@ public class MenuManager : MonoBehaviour
     // Credits 
     public GameObject credits;
 
-    public GameObject[] students;
-    [SerializeField]
-    int index;
-
+    public GameObject intro;
+  
    [SerializeField]
     // Musica que toca no menu
     private AudioClip menuSoundtrack;
     
     private void Start()
     {
-        index = 0;
         AudioManager.Instance.PlayMusicWithCrossFade(menuSoundtrack, 0.1f);
     }
 
@@ -65,29 +62,19 @@ public class MenuManager : MonoBehaviour
         credits.SetActive(true);
     }
 
+    public void MenuToIntro()
+    {
+        menu.SetActive(false);
+        intro.SetActive(true);
+    }
+
+
     public void CreditsToMenu()
     {
         credits.SetActive(false);
         menu.SetActive(true);
     }
 
-    public void NextCredit(){
-        int i;
-        index++;
-        i = index;
-        
-        students[i--].SetActive(false);
-        students[index].SetActive(true);
-    }
-
-    public void PreviousCredit(){
-        int i;
-        index--;
-        i = index;
-             
-        students[++i].SetActive(false);
-        students[index].SetActive(true);
-    }
 }
 
 

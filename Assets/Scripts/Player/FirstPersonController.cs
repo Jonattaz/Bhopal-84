@@ -740,14 +740,14 @@ public class FirstPersonController : MonoBehaviour
         if(other.gameObject.tag == "Fog"){
           if(canTakeDamage){
             StartCoroutine(DamageTime());
-            ApplyDamage(5);
+            ApplyDamage(1);
           }
         }
     }
 
     IEnumerator DamageTime(){
         canTakeDamage = false;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(10);
         canTakeDamage = true;
         
     }

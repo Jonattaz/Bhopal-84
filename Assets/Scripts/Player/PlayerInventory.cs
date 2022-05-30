@@ -81,23 +81,5 @@ public class PlayerInventory : MonoBehaviour
        itemPrefab = Instantiate(items[index].prefab, new Vector3(1000,1000,1000), Quaternion.identity);
        UI.instaceUI.Set3DCaptions(items[index].text);
         
-        /* 
-        =============================================================================================================
-        Código para pegar objetos específicos na lista de itens  
-        int j;
-        j = UI.instaceUI.inventoryItems.Length;
-        for (int i = 0; i <= UI.instaceUI.inventoryItems.Length; i++)
-        {
-            if (j == index)
-            { 
-                Faça algo
-            }
-            else
-            {
-                j--;
-            }
-        }
-        ===============================================================================================================
-        */
     }
 }
