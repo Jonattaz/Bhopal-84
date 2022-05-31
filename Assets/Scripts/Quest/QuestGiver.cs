@@ -18,8 +18,10 @@ public class QuestGiver : MonoBehaviour
     [HideInInspector]
     public bool localActive;
 
+    [SerializeField]
+    private Item questItem;
 
-    //[HideInInspector]
+    [HideInInspector]
     public string neededItemHolder;
     public int questIndex;
     
@@ -36,6 +38,18 @@ public class QuestGiver : MonoBehaviour
         quest.isActive = true;
         localActive = quest.isActive;
         playerQuests.quests[questIndex] = quest;
+
+         StartCoroutine(ItemQuestVerifier());
+    }
+
+
+    IEnumerator ItemQuestVerifier(){
+       completed = true;
+       yield return new WaitForSeconds(3);
+       if(PlayerInventory.instance.items.Contains(questItem)){
+            CompleteQuest();
+            PlayerInventory.instance.inQuest = false;
+        }
     }
 
     public void CompleteQuest(){

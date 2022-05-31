@@ -17,6 +17,10 @@ public class DialogPopUp : MonoBehaviour
 
     [SerializeField]private Color startColor;
 
+    [SerializeField]private bool completedHolder;
+
+    [SerializeField]private bool noQuest;
+
     public QuestGiver questGiver;
 
     // Start is called before the first frame update
@@ -24,6 +28,11 @@ public class DialogPopUp : MonoBehaviour
        startColor = image.color;
        endColor.a = 1;
    }
+   private void Update() {
+       if(questGiver != null)
+        completedHolder = questGiver.completed;
+   }
+
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.CompareTag(tagName))
@@ -33,9 +42,8 @@ public class DialogPopUp : MonoBehaviour
             
            if(AI.instanceAI.canTalk){ 
                 image.color = endColor;
-
-               if(questGiver != null){ 
-                    if(!questGiver.completed){
+               if(!noQuest){ 
+                    if(!completedHolder){
                         dialogBeforeQuest.SetActive(true);
                     }else if(dialogAfterQuest != null){
                         dialogAfterQuest.SetActive(true);

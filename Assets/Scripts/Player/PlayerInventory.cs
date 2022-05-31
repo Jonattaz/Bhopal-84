@@ -52,17 +52,6 @@ public class PlayerInventory : MonoBehaviour
     }
 
 
-    // Não Funciona
-    public void RemoveItem(Item item)
-    {
-        if (items.Contains(item))
-        {
-            return;
-        }
-        UI.instaceUI.UseItems(item, items.Count - 1);
-        items.Remove(item);
-    }
-
     public void QuestItem(Item item){
 
         if(questGivers[index].neededItemHolder == item.itemName){

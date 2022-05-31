@@ -2735,6 +2735,8 @@ MonoBehaviour:
   image: {fileID: 206711910}
   endColor: {r: 0.13181043, g: 1, b: 0, a: 0}
   startColor: {r: 0, g: 0, b: 0, a: 0}
+  completedHolder: 0
+  noQuest: 0
   questGiver: {fileID: 778095689}
 --- !u!65 &217803560
 BoxCollider:
@@ -3165,6 +3167,8 @@ MonoBehaviour:
   image: {fileID: 625609596}
   endColor: {r: 0.13181043, g: 1, b: 0, a: 0}
   startColor: {r: 0, g: 0, b: 0, a: 0}
+  completedHolder: 0
+  noQuest: 1
   questGiver: {fileID: 0}
 --- !u!65 &295408173
 BoxCollider:
@@ -4422,6 +4426,8 @@ MonoBehaviour:
   image: {fileID: 1866046975}
   endColor: {r: 0.13181043, g: 1, b: 0, a: 0}
   startColor: {r: 0, g: 0, b: 0, a: 0}
+  completedHolder: 0
+  noQuest: 0
   questGiver: {fileID: 1658605183}
 --- !u!65 &453541730
 BoxCollider:
@@ -6730,6 +6736,8 @@ MonoBehaviour:
   image: {fileID: 2097888983}
   endColor: {r: 0.13181043, g: 1, b: 0, a: 0}
   startColor: {r: 0, g: 0, b: 0, a: 0}
+  completedHolder: 0
+  noQuest: 1
   questGiver: {fileID: 0}
 --- !u!65 &684656088
 BoxCollider:
@@ -7557,6 +7565,7 @@ MonoBehaviour:
   neededItem: {fileID: 132040225}
   completed: 0
   localActive: 0
+  questItem: {fileID: 11400000, guid: d50eddc33f67bd84b9ceb9a63ab4a686, type: 2}
   neededItemHolder: 
   questIndex: 2
 --- !u!1 &785076160 stripped
@@ -7865,6 +7874,8 @@ MonoBehaviour:
   image: {fileID: 540158176}
   endColor: {r: 0.13181043, g: 1, b: 0, a: 0}
   startColor: {r: 0, g: 0, b: 0, a: 0}
+  completedHolder: 0
+  noQuest: 1
   questGiver: {fileID: 0}
 --- !u!65 &809248825
 BoxCollider:
@@ -9930,6 +9941,8 @@ MonoBehaviour:
   image: {fileID: 1997036870}
   endColor: {r: 0.13181043, g: 1, b: 0, a: 0}
   startColor: {r: 0, g: 0, b: 0, a: 0}
+  completedHolder: 0
+  noQuest: 1
   questGiver: {fileID: 0}
 --- !u!65 &919913741
 BoxCollider:
@@ -11445,6 +11458,8 @@ MonoBehaviour:
   image: {fileID: 281196830}
   endColor: {r: 0.13181043, g: 1, b: 0, a: 0}
   startColor: {r: 0, g: 0, b: 0, a: 0}
+  completedHolder: 0
+  noQuest: 1
   questGiver: {fileID: 0}
 --- !u!65 &1139911050
 BoxCollider:
@@ -13294,6 +13309,8 @@ MonoBehaviour:
   image: {fileID: 1148068731}
   endColor: {r: 0.13181043, g: 1, b: 0, a: 0}
   startColor: {r: 0, g: 0, b: 0, a: 0}
+  completedHolder: 0
+  noQuest: 0
   questGiver: {fileID: 2002566796}
 --- !u!65 &1356935346
 BoxCollider:
@@ -13926,6 +13943,8 @@ MonoBehaviour:
   image: {fileID: 1499227000}
   endColor: {r: 0.13181043, g: 1, b: 0, a: 0}
   startColor: {r: 0, g: 0, b: 0, a: 0}
+  completedHolder: 0
+  noQuest: 1
   questGiver: {fileID: 0}
 --- !u!65 &1435307727
 BoxCollider:
@@ -14346,6 +14365,8 @@ MonoBehaviour:
   image: {fileID: 2027813586}
   endColor: {r: 0.13181043, g: 1, b: 0, a: 0}
   startColor: {r: 0, g: 0, b: 0, a: 0}
+  completedHolder: 0
+  noQuest: 1
   questGiver: {fileID: 0}
 --- !u!65 &1501159415
 BoxCollider:
@@ -16014,6 +16035,7 @@ MonoBehaviour:
   neededItem: {fileID: 132040225}
   completed: 0
   localActive: 0
+  questItem: {fileID: 11400000, guid: d2c51733ccead974d8bd39f3755fd5e2, type: 2}
   neededItemHolder: 
   questIndex: 0
 --- !u!1 &1659807796 stripped
@@ -18873,6 +18895,8 @@ MonoBehaviour:
   image: {fileID: 1606295382}
   endColor: {r: 0.13181043, g: 1, b: 0, a: 0}
   startColor: {r: 0, g: 0, b: 0, a: 0}
+  completedHolder: 0
+  noQuest: 1
   questGiver: {fileID: 0}
 --- !u!65 &1915027543
 BoxCollider:
@@ -19499,6 +19523,7 @@ MonoBehaviour:
   neededItem: {fileID: 132040225}
   completed: 0
   localActive: 0
+  questItem: {fileID: 11400000, guid: ec0ad64a40003614196569fc6f948c16, type: 2}
   neededItemHolder: 
   questIndex: 1
 --- !u!1 &2004236558 stripped
