@@ -5,16 +5,26 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< Updated upstream
       ticks: 637897465370670009
     m_Hash: 3944434700
+=======
+      ticks: 637897463975608646
+    m_Hash: 839450157
+>>>>>>> Stashed changes
   m_LockFileStatus:
     m_FilePath: C:/Users/jonat/OneDrive/Documentos/Unity projects/Projeto-3D/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< Updated upstream
       ticks: 637897465374404507
     m_Hash: 1737888175
+=======
+      ticks: 637897463976101576
+    m_Hash: 420717664
+>>>>>>> Stashed changes
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -442,6 +452,7 @@ m_PackageAssets:
         url: https://github.com/Unity-Technologies/com.unity.ide.vscode.git
         revision: b0740c80bfc2440527c317109f7c3d9100132722
         path: 
+<<<<<<< Updated upstream
     - packageId: com.unity.postprocessing@3.2.2
       testable: 0
       isDirectDependency: 1
@@ -537,6 +548,8 @@ m_PackageAssets:
         url: https://github.com/Unity-Technologies/Graphics.git
         revision: 815ce78463c7d3006fa97cd6e8898d91cb9c3ebf
         path: 
+=======
+>>>>>>> Stashed changes
     - packageId: com.unity.probuilder@4.5.2
       testable: 0
       isDirectDependency: 1
