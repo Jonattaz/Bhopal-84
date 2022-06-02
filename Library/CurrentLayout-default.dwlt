@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: Scene
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 592}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 2560
     height: 997
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 592}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 947
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 677, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 77
+  controlID: 95
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,10 +144,10 @@ MonoBehaviour:
     y: 0
     width: 1957
     height: 947
-  m_MinSize: {x: 403, y: 492}
+  m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 78
+  controlID: 16
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,10 +169,10 @@ MonoBehaviour:
     y: 0
     width: 1957
     height: 567
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 79
+  controlID: 17
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 558
     height: 567
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -227,7 +227,7 @@ MonoBehaviour:
   - {fileID: 16}
   - {fileID: 17}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 3
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -275,8 +275,8 @@ MonoBehaviour:
     y: 0
     width: 603
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -424,10 +424,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 352}
-      m_SelectedIDs: 52ca0500
-      m_LastClickedID: 379474
-      m_ExpandedIDs: 3ea6fbff48a6fbff4ca7fbff3ef5fbffc48efcff28c2feffa8c5feffaec5feff46c6feffa6c7feffb2ccfeffb8ccfeffdccffeff84e2feff4606ffff242affff0042ffff405effff40ac05005aac0500acae0500acc40500c8c40500d0c4050046c505006ec5050082c5050084c60500fcc605000ec705008ac805008ec8050046c90500a0c90500fec9050004ca050048ca050004cb050052cb0500c2cb0500dccb0500
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 5ea9fcff
+      m_LastClickedID: 0
+      m_ExpandedIDs: b4e8ffff6cfbffff584300002e480000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -487,9 +487,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 997.20154, y: -591.02875, z: -423.06168}
+    m_Target: {x: 309.0703, y: -1193.828, z: -198.49332}
     speed: 2
-    m_Value: {x: 997.20154, y: -591.02875, z: -423.06168}
+    m_Value: {x: 309.0703, y: -1193.828, z: -198.49332}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -536,13 +536,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.063175686, y: 0.9366638, z: -0.23460665, w: 0.25264198}
+    m_Target: {x: 0.042901568, y: -0.869913, z: 0.48585865, w: 0.07587281}
     speed: 2
-    m_Value: {x: 0.062113162, y: 0.93769825, z: -0.23486528, w: 0.24839981}
+    m_Value: {x: 0.04216421, y: -0.8698499, z: 0.48582423, w: 0.07455278}
   m_Size:
-    m_Target: 691.4749
+    m_Target: 747.06116
     speed: 2
-    m_Value: 724.0575
+    m_Value: 782.263
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -653,38 +653,38 @@ MonoBehaviour:
     m_SceneHandles: 
     m_ShowAllHits: 0
     m_SkipHidden: 0
-    m_SearchArea: 0
+    m_SearchArea: 1
     m_Folders:
-    - Assets/ADG_Textures/Baixados
+    - Assets/GrassFlowers/Textures/GrassFlowers
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/ADG_Textures/Baixados
+  - Assets/GrassFlowers/Textures/GrassFlowers
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\T-Gamer\Documents\GitHub\Projeto-3D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f2d80f00
-    m_LastClickedID: 1038578
-    m_ExpandedIDs: 0000000028b505002ab505002eb5050034b5050068f7050034fb050036fb050060fb05006afb05006cfb0500f6330a00d8640c00c61f0d00ce1f0d00d01f0d00d41f0d00
+    m_SelectedIDs: 1e660000
+    m_LastClickedID: 26142
+    m_ExpandedIDs: 000000002c6300002e63000030630000326300003463000036630000386300003a6300003c6300003e63000040630000426300004463000046630000486300004c6500001a6600001c660000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: SomGiovani
-      m_OriginalName: SomGiovani
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 547646
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -698,7 +698,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000024b5050026b5050028b505002ab50500
+    m_ExpandedIDs: 000000002c6300002e63000030630000326300003463000036630000386300003a6300003c6300003e6300004063000042630000446300004663000048630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
