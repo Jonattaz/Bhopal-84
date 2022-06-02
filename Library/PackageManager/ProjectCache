@@ -8,8 +8,13 @@ m_ProjectFiles:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       ticks: 637897465370670009
     m_Hash: 3944434700
+=======
+      ticks: 637897463975608646
+    m_Hash: 839450157
+>>>>>>> Stashed changes
 =======
       ticks: 637897463975608646
     m_Hash: 839450157
@@ -31,8 +36,13 @@ m_ProjectFiles:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       ticks: 637897465374404507
     m_Hash: 1737888175
+=======
+      ticks: 637897463976101576
+    m_Hash: 420717664
+>>>>>>> Stashed changes
 =======
       ticks: 637897463976101576
     m_Hash: 420717664
@@ -475,6 +485,7 @@ m_PackageAssets:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     - packageId: com.unity.postprocessing@3.2.2
       testable: 0
       isDirectDependency: 1
@@ -570,6 +581,8 @@ m_PackageAssets:
         url: https://github.com/Unity-Technologies/Graphics.git
         revision: 815ce78463c7d3006fa97cd6e8898d91cb9c3ebf
         path: 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
