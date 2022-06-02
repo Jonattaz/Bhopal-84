@@ -12,8 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/FirstScene.unity
     guid: 2948f35817c3d88468ae9d88e96ec7cb
   - enabled: 1
+    path: Assets/Scenes/SecondSceneTransition.unity
+    guid: 8c027a14822719e44b0692c09bd9a233
+  - enabled: 1
     path: Assets/Scenes/SecondScene.unity
-    guid: ccd6365619104364e87975bf7ce378d3
+    guid: 0182a5ac5770aa944aa14ad938f90d5d
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: 86a7ae7f53fd9114d94d3f680b6561ce
