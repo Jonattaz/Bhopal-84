@@ -10,9 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 410766b47f10e534f94cc0503a3acf23, type: 3}
-  m_Name: Abdul
+  m_Name: Kabir.
   m_EditorClassIdentifier: 
   quest: 0
-  speakerLeft: {fileID: 0}
-  speakerRight: {fileID: 0}
-  lines: []
+  speakerLeft: {fileID: 11400000, guid: 2634b19da675874498458262792e8cd6, type: 2}
+  speakerRight: {fileID: 11400000, guid: 2634b19da675874498458262792e8cd6, type: 2}
+  lines:
+  - character: {fileID: 11400000, guid: 2634b19da675874498458262792e8cd6, type: 2}
+    text: "*Cof, cof, cof*. At\xE9 as vacas est\xE3o morrendo, n\xF3s n\xE3o merecemos
+      isso."

@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 410766b47f10e534f94cc0503a3acf23, type: 3}
-  m_Name: Hospital Before
+  m_Name: Aarav.
   m_EditorClassIdentifier: 
   quest: 0
-  speakerLeft: {fileID: 0}
-  speakerRight: {fileID: 0}
-  lines: []
+  speakerLeft: {fileID: 11400000, guid: 5eb4640511e0d1b4b9efdac3601ec7af, type: 2}
+  speakerRight: {fileID: 11400000, guid: 5eb4640511e0d1b4b9efdac3601ec7af, type: 2}
+  lines:
+  - character: {fileID: 11400000, guid: 5eb4640511e0d1b4b9efdac3601ec7af, type: 2}
+    text: "Eu sei que ele n\xE3o era um dos mais saudaveis, mas at\xE9 ele?"
