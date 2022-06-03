@@ -23,8 +23,11 @@ public class PlayerInventory : MonoBehaviour
     public bool questObjective;
 
     public bool inQuest = false;
+
+    public bool finalLevel;
     private void Awake()
     {
+        finalLevel = false;
         instance = this;
         
     }
@@ -33,6 +36,11 @@ public class PlayerInventory : MonoBehaviour
         if(LastQuestIndex == index){
             StartCoroutine(WaitForSceneLoad());
         }
+
+        if(finalLevel){
+            StartCoroutine(WaitForSceneLoad());
+        }
+
     }
 
      private IEnumerator WaitForSceneLoad() {

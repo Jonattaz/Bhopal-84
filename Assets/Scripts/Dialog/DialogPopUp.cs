@@ -21,6 +21,8 @@ public class DialogPopUp : MonoBehaviour
 
     [SerializeField]private bool noQuest;
 
+    [SerializeField] private bool nextLevelController;
+
     public QuestGiver questGiver;
 
     // Start is called before the first frame update
@@ -58,6 +60,14 @@ public class DialogPopUp : MonoBehaviour
            // print("Player Inventory: In Quest " + PlayerInventory.instance.inQuest);    
         }
 
+    }
+
+    private void OnTriggerStay(Collider collision) {
+        if(collision.CompareTag(tagName)){
+            if(nextLevelController && PlayerInventory.instance.inQuest){
+                PlayerInventory.instance.finalLevel = true;
+            }
+        }    
     }
 
     private void OnTriggerExit(Collider collision)
