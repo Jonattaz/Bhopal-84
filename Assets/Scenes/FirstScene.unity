@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 0.31
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.34509805, g: 0.34509805, b: 0.34509805, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 1b633269e4ab8dc4f8434d5bc3ba1023, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: c52c5d7968fa6c9499b0b5752f899bfb, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -3353,6 +3353,7 @@ MonoBehaviour:
   startColor: {r: 1, g: 1, b: 1, a: 0}
   completedHolder: 0
   noQuest: 1
+  nextLevelController: 0
   questGiver: {fileID: 0}
 --- !u!65 &176896583
 BoxCollider:
@@ -5808,6 +5809,7 @@ MonoBehaviour:
   startColor: {r: 1, g: 1, b: 1, a: 0}
   completedHolder: 0
   noQuest: 0
+  nextLevelController: 0
   questGiver: {fileID: 778095689}
 --- !u!65 &217803560
 BoxCollider:
@@ -6036,7 +6038,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.9528302, g: 0.9528302, b: 0.9528302, a: 1}
+  m_Color: {r: 0.8207547, g: 0.5536826, b: 0.15873085, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -6944,6 +6946,7 @@ MonoBehaviour:
   startColor: {r: 1, g: 1, b: 1, a: 0}
   completedHolder: 0
   noQuest: 1
+  nextLevelController: 0
   questGiver: {fileID: 0}
 --- !u!65 &295408173
 BoxCollider:
@@ -10221,6 +10224,7 @@ MonoBehaviour:
   startColor: {r: 1, g: 1, b: 1, a: 0}
   completedHolder: 0
   noQuest: 0
+  nextLevelController: 0
   questGiver: {fileID: 1658605183}
 --- !u!65 &453541730
 BoxCollider:
@@ -14689,6 +14693,7 @@ MonoBehaviour:
   startColor: {r: 1, g: 1, b: 1, a: 0}
   completedHolder: 0
   noQuest: 1
+  nextLevelController: 0
   questGiver: {fileID: 0}
 --- !u!65 &684656088
 BoxCollider:
@@ -15045,6 +15050,22 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6874eca3cb900dd4cba7bb1c75389c8d, type: 3}
       propertyPath: m_Name
       value: old_water_tower_FBX
+      objectReference: {fileID: 0}
+    - target: {fileID: 2382799219754379413, guid: 6874eca3cb900dd4cba7bb1c75389c8d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.57818615
+      objectReference: {fileID: 0}
+    - target: {fileID: 2382799219754379413, guid: 6874eca3cb900dd4cba7bb1c75389c8d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.57818615
+      objectReference: {fileID: 0}
+    - target: {fileID: 2382799219754379413, guid: 6874eca3cb900dd4cba7bb1c75389c8d, type: 3}
+      propertyPath: m_Color.r
+      value: 0.6698113
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869873546869171050, guid: 6874eca3cb900dd4cba7bb1c75389c8d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6874eca3cb900dd4cba7bb1c75389c8d, type: 3}
@@ -15913,6 +15934,7 @@ MonoBehaviour:
   startColor: {r: 1, g: 1, b: 1, a: 0}
   completedHolder: 0
   noQuest: 1
+  nextLevelController: 0
   questGiver: {fileID: 0}
 --- !u!65 &809248825
 BoxCollider:
@@ -18471,6 +18493,7 @@ MonoBehaviour:
   startColor: {r: 0, g: 0, b: 0, a: 0}
   completedHolder: 0
   noQuest: 1
+  nextLevelController: 0
   questGiver: {fileID: 0}
 --- !u!65 &919913741
 BoxCollider:
@@ -24171,6 +24194,7 @@ MonoBehaviour:
   startColor: {r: 1, g: 1, b: 1, a: 0}
   completedHolder: 0
   noQuest: 1
+  nextLevelController: 0
   questGiver: {fileID: 0}
 --- !u!65 &1139911050
 BoxCollider:
@@ -24789,7 +24813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6606038483428981550, guid: 4b1ffb2d1e1b35343a9d650ebc0e08e3, type: 3}
       propertyPath: sprintSpeed
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6606038483428981550, guid: 4b1ffb2d1e1b35343a9d650ebc0e08e3, type: 3}
       propertyPath: baseStepSpeed
@@ -26296,6 +26320,7 @@ MonoBehaviour:
   startColor: {r: 1, g: 1, b: 1, a: 0}
   completedHolder: 0
   noQuest: 0
+  nextLevelController: 0
   questGiver: {fileID: 2002566796}
 --- !u!65 &1356935346
 BoxCollider:
@@ -27293,6 +27318,7 @@ MonoBehaviour:
   startColor: {r: 1, g: 1, b: 1, a: 0}
   completedHolder: 0
   noQuest: 1
+  nextLevelController: 0
   questGiver: {fileID: 0}
 --- !u!65 &1435307727
 BoxCollider:
@@ -27820,6 +27846,7 @@ MonoBehaviour:
   startColor: {r: 1, g: 1, b: 1, a: 0}
   completedHolder: 0
   noQuest: 1
+  nextLevelController: 0
   questGiver: {fileID: 0}
 --- !u!65 &1501159415
 BoxCollider:
@@ -37426,6 +37453,7 @@ MonoBehaviour:
   startColor: {r: 1, g: 1, b: 1, a: 0}
   completedHolder: 0
   noQuest: 1
+  nextLevelController: 0
   questGiver: {fileID: 0}
 --- !u!65 &1915027543
 BoxCollider:

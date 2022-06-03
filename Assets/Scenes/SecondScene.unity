@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 0.31
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.34509805, g: 0.34509805, b: 0.34509805, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 1b633269e4ab8dc4f8434d5bc3ba1023, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: d4454f71d85928744be7771e2143dab7, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -2441,7 +2441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 915fef928799b2a4b9b5938207893dea, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 600.8
+      value: 606.51
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 915fef928799b2a4b9b5938207893dea, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5599,7 +5599,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.11756727, g: 0.10070309, b: 0.6886792, a: 1}
+  m_Color: {r: 0.006628974, g: 0.00080099865, b: 0.16981131, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -11632,7 +11632,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0e09507a6a5b2584ea62ac92d52a6a2a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.94
+      value: 12.98
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0e09507a6a5b2584ea62ac92d52a6a2a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11640,7 +11640,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0e09507a6a5b2584ea62ac92d52a6a2a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.24
+      value: -11.59
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0e09507a6a5b2584ea62ac92d52a6a2a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13533,6 +13533,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1690459696}
     m_Modifications:
+    - target: {fileID: -8700617353114198275, guid: 6874eca3cb900dd4cba7bb1c75389c8d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6874eca3cb900dd4cba7bb1c75389c8d, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -13596,6 +13600,26 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6874eca3cb900dd4cba7bb1c75389c8d, type: 3}
       propertyPath: m_Name
       value: old_water_tower_FBX
+      objectReference: {fileID: 0}
+    - target: {fileID: 2382799219754379413, guid: 6874eca3cb900dd4cba7bb1c75389c8d, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2382799219754379413, guid: 6874eca3cb900dd4cba7bb1c75389c8d, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2382799219754379413, guid: 6874eca3cb900dd4cba7bb1c75389c8d, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2382799219754379413, guid: 6874eca3cb900dd4cba7bb1c75389c8d, type: 3}
+      propertyPath: m_Intensity
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2382799219754379413, guid: 6874eca3cb900dd4cba7bb1c75389c8d, type: 3}
+      propertyPath: m_BounceIntensity
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6874eca3cb900dd4cba7bb1c75389c8d, type: 3}
@@ -14134,7 +14158,9 @@ MonoBehaviour:
       requiredAmount: 0
       currentAmount: 0
     title: Corra para o Hospital
-    description: "Voc\xEA acordou passando mal e precisa ir correndo para o hospital"
+    description: "Voc\xEA acordou passando mal e precisa ir correndo para o hospital.
+      Por causa do escuro voc\xEA precisar\xE1 usar a lanterna, para isso aperte
+      L"
     neededItem: Hospital
   playerQuests: {fileID: 524936591}
   instance: {fileID: 0}
@@ -20922,7 +20948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 915fef928799b2a4b9b5938207893dea, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 603.39996
+      value: 609.11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 915fef928799b2a4b9b5938207893dea, type: 3}
       propertyPath: m_LocalRotation.w
@@ -22552,7 +22578,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6606038483428981544, guid: 4b1ffb2d1e1b35343a9d650ebc0e08e3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 505.094
+      value: 505.61
       objectReference: {fileID: 0}
     - target: {fileID: 6606038483428981544, guid: 4b1ffb2d1e1b35343a9d650ebc0e08e3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -22604,11 +22630,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6606038483428981550, guid: 4b1ffb2d1e1b35343a9d650ebc0e08e3, type: 3}
       propertyPath: sprintSpeed
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6606038483428981550, guid: 4b1ffb2d1e1b35343a9d650ebc0e08e3, type: 3}
       propertyPath: baseStepSpeed
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6606038483428981550, guid: 4b1ffb2d1e1b35343a9d650ebc0e08e3, type: 3}
+      propertyPath: flashlightKey
+      value: 108
       objectReference: {fileID: 0}
     - target: {fileID: 6606038483428981550, guid: 4b1ffb2d1e1b35343a9d650ebc0e08e3, type: 3}
       propertyPath: canUseFlashlight
@@ -22660,7 +22690,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 8394dc49527c57b4cb95e69480469b68, type: 3}
     - target: {fileID: 6606038483973584773, guid: 4b1ffb2d1e1b35343a9d650ebc0e08e3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6606038485085627614, guid: 4b1ffb2d1e1b35343a9d650ebc0e08e3, type: 3}
       propertyPath: m_Range
@@ -23347,7 +23377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266103716}
   m_LocalRotation: {x: -0, y: -0.5826682, z: -0, w: -0.8127102}
-  m_LocalPosition: {x: 1.0598145, y: -1.55, z: 89.11929}
+  m_LocalPosition: {x: 2.03, y: -1.55, z: 95.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 793028877}
@@ -34759,7 +34789,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 291aa68b5407d0549ac53d37b2804b6e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 575.92596
+      value: 583.13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 291aa68b5407d0549ac53d37b2804b6e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -34767,7 +34797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 291aa68b5407d0549ac53d37b2804b6e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 501.93
+      value: 502.81
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 291aa68b5407d0549ac53d37b2804b6e, type: 3}
       propertyPath: m_LocalRotation.w
