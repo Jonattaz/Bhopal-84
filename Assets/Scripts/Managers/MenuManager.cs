@@ -22,7 +22,7 @@ public class MenuManager : MonoBehaviour
     
     private void Start()
     {
-        AudioManager.Instance.PlayMusicWithCrossFade(menuSoundtrack, 0.1f);
+        AudioManager.Instance.PlayMusic(menuSoundtrack);
     }
 
     // Load another scenes
