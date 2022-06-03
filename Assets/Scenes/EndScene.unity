@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028377, g: 0.22571409, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -499,18 +499,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Texto de desfecho
-
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Nam vitae eleifend velit. Nullam lacinia leo sed eros ultrices, et commodo
-    velit imperdiet. Phasellus nec tortor tellus. Donec eget pretium diam. Ut auctor
-    magna elit, eu ullamcorper lectus viverra a. Nunc rhoncus sit amet ex quis fringilla.
-    Curabitur eu laoreet augue, id aliquet urna. Nunc ornare urna sed sagittis finibus.
-
-
-
-'
+  m_Text: "O desastre qu\xEDmico na madrugada de dezembro em Bhopal ocorreu na f\xE1brica
+    de agrot\xF3xicos Union Carbide India Limited (UCIL). O vazamento de gases prejudiciais
+    \xE0 sa\xFAde chegando a uma estimativa de meio milh\xE3o de pessoas expostas
+    ao g\xE1s, sendo na \xE9poca nove mil habitantes na cidade de Bhopal.\nComo o
+    g\xE1s \xE9 pesado, ele forma uma nuvem mais densa e tem caracter\xEDsticas como
+    cheiro forte, causando ard\xEAncia nos olhos e \xE2nsia de v\xF4mito em quem
+    o inala. A principal causa de mortes do acidente foi de insufici\xEAncia respirat\xF3ria.\nAt\xE9
+    os dias de hoje a popula\xE7\xE3o da cidade sofre por gera\xE7\xF5es as consequ\xEAncias
+    desse acidente e a empresa n\xE3o foi responsabilizada pelos danos causados.\n"
 --- !u!222 &852292671
 CanvasRenderer:
   m_ObjectHideFlags: 0
