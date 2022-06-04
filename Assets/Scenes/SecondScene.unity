@@ -22630,7 +22630,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6606038483428981550, guid: 4b1ffb2d1e1b35343a9d650ebc0e08e3, type: 3}
       propertyPath: sprintSpeed
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6606038483428981550, guid: 4b1ffb2d1e1b35343a9d650ebc0e08e3, type: 3}
       propertyPath: baseStepSpeed
@@ -35418,6 +35418,10 @@ PrefabInstance:
     - target: {fileID: 8057369621325782976, guid: 4fc1b5b27c63c3740b661aed6034735d, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057369621325782976, guid: 4fc1b5b27c63c3740b661aed6034735d, type: 3}
+      propertyPath: m_TagString
+      value: Fog
       objectReference: {fileID: 0}
     - target: {fileID: 8057369621325782978, guid: 4fc1b5b27c63c3740b661aed6034735d, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar

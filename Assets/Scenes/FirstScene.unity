@@ -24813,7 +24813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6606038483428981550, guid: 4b1ffb2d1e1b35343a9d650ebc0e08e3, type: 3}
       propertyPath: sprintSpeed
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6606038483428981550, guid: 4b1ffb2d1e1b35343a9d650ebc0e08e3, type: 3}
       propertyPath: baseStepSpeed
@@ -31189,8 +31189,8 @@ MonoBehaviour:
       requiredAmount: 0
       currentAmount: 0
     title: "Ajude as crian\xE7as"
-    description: "Maya e seus colegas estav\xE3o brincando, mas jogaram a bola na
-      casa do velho Rashid, por isso pediram sua ajuda para recupera a bola"
+    description: Maya e seus colegas estavam brincando, mas jogaram a bola na casa
+      do velho Rashid, por isso pediram sua ajuda para recupera a bola
     neededItem: Bola
   playerQuests: {fileID: 524936591}
   instance: {fileID: 0}
