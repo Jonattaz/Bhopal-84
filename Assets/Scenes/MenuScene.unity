@@ -923,6 +923,8 @@ MonoBehaviour:
   - {fileID: 1995506863}
   - {fileID: 784306293}
   index: 0
+  VP: {fileID: 0}
+  thereISVP: 0
 --- !u!4 &175226810
 Transform:
   m_ObjectHideFlags: 0
@@ -2407,6 +2409,8 @@ MonoBehaviour:
   - {fileID: 820223891}
   - {fileID: 112581326}
   index: 0
+  VP: {fileID: 2009346518}
+  thereISVP: 1
 --- !u!4 &839137612
 Transform:
   m_ObjectHideFlags: 0

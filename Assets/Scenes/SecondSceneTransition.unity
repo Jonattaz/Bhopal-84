@@ -604,6 +604,8 @@ MonoBehaviour:
   screens:
   - {fileID: 112581326}
   index: 0
+  VP: {fileID: 663360695}
+  thereISVP: 1
 --- !u!4 &839137612
 Transform:
   m_ObjectHideFlags: 0

@@ -747,7 +747,7 @@ public class FirstPersonController : MonoBehaviour
 
     IEnumerator DamageTime(){
         canTakeDamage = false;
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(3);
         canTakeDamage = true;
         
     }

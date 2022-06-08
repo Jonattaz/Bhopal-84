@@ -15605,7 +15605,7 @@ MonoBehaviour:
       currentAmount: 0
     title: Entrar em casa
     description: "Voc\xEA lembrou que sua chave est\xE1 com o chaveiro Akshay. V\xE1
-      buscar ela"
+      buscar ela para que possa entrar em casa."
     neededItem: Chave
   playerQuests: {fileID: 524936591}
   instance: {fileID: 0}
@@ -31188,9 +31188,10 @@ MonoBehaviour:
       GoalType: 0
       requiredAmount: 0
       currentAmount: 0
-    title: "Ajude as crian\xE7as"
-    description: Maya e seus colegas estavam brincando, mas jogaram a bola na casa
-      do velho Rashid, por isso pediram sua ajuda para recupera a bola
+    title: 'Ajude Maya '
+    description: "Maya e seus colegas estavam jogando bola, mas acabaram por jogar
+      ela na casa do velho Rashid. Por n\xE3o gostarem dele pediram a sua ajuda para
+      recuperar a bola."
     neededItem: Bola
   playerQuests: {fileID: 524936591}
   instance: {fileID: 0}
@@ -38273,7 +38274,7 @@ MonoBehaviour:
       GoalType: 0
       requiredAmount: 0
       currentAmount: 0
-    title: Ajude o Sr Aarav
+    title: Ajudando nas compras
     description: "O senhor Aarav est\xE1 com problemas para pegar a sua compra e
       pediu a sua ajuda"
     neededItem: Cesta

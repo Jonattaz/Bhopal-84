@@ -25,4 +25,4 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: 4cc42392f6150774196c73ded3f5116a, type: 2}
     text: "Aqui est\xE1."
   - character: {fileID: 11400000, guid: 4cc42392f6150774196c73ded3f5116a, type: 2}
-    text: "Valeu, Manoj ! Bom descanso pra voc\xEA."
+    text: "Valeu, Manoj! Bom descanso pra voc\xEA."
